@@ -1,3 +1,2 @@
 FROM vnc_sample:latest
-
-RUN yum groupremove -y "Server with GUI" && yum clean all
+RUN yum --setopt=tsflags=noscripts groupremove -y "Server with GUI"
